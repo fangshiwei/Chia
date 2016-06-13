@@ -1,19 +1,42 @@
 package com.chia.web.controller;
 
-import org.springframework.web.bind.annotation.RequestBody;
+import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.chia.vo.ChiaChargeVO;
+import com.chia.service.PingppService;
 
-@RestController
-@RequestMapping("/chiapay")
+
+@Controller
+@RequestMapping("/pingpp")
 public class PingppPayController {
 	
+	
+	@Autowired
+	PingppService pingppService;
+	
 	@RequestMapping("/pay")
-	public String pay(@RequestBody ChiaChargeVO chiaChargeVO){
-		System.out.println(chiaChargeVO.getClientIp());
-		return chiaChargeVO.getClientIp();
+	@ResponseBody
+	public String pay(String channel){
+		
+		String charge = pingppService.pay(channel);
+		JSONObject josnObject = new JSONObject();
+		josnObject.put("charge", charge);
+		return josnObject.toString();
+	}
+	
+	
+	@RequestMapping("/refund")
+	@ResponseBody
+	public String refund(String channel){
+		
+		/**
+		 * @TODO
+		 * 
+		 */
+		return null;
 	}
 	
 }
