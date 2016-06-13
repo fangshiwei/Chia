@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://store.smartisan.com/#/order/payment/160607308578047 -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<title>支付订单</title>
+<!-- <link href="http://static.smartisanos.cn/common/img/favicon.ico"
+	rel="shortcut icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_114.png"
+	rel="apple-touch-icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_76.png"
+	sizes="76x76" rel="apple-touch-icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_120.png"
+	sizes="120x120" rel="apple-touch-icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_152.png"
+	sizes="152x152" rel="apple-touch-icon"> -->
+<link rel="stylesheet" href="./payment_files/main-1a498fcb.css">
+<link rel="stylesheet" href="./payment_files/screen-5a92f318.css"
+	media="only screen and (max-device-width:760px) and (-webkit-min-device-pixel-ratio:2)">
+<!--[if lte IE 7]><script src="http://static.smartisanos.cn/common/js/update-browser.js"></script><![endif]-->
+</head>
+<!-- <iframe src="./payment_files/mapping.html" width="0" height="0"
+	frameborder="0" style="display: none;"></iframe> -->
+<body class="browser-webkit browser-linux">
+	<div class="wrapper">
+		<div class="header layout-header">
+			<div class="header-top-wrapper">
+				<div class="header-wrapper">
+					<div class="header-container fn-clear">
+						<a href="#" class="logo"><img
+							src="./img/library/logo.png"></a>
+						<div id="nav-account" class="header-account-panel">
+							<div class="account-label">
+								<img src="./payment_files/i.gif" class="account-avatar" alt="">
+								<a href="http://store.smartisan.com/account/"
+									class="account-link">个人中心</a>
+								<div class="account-menu">
+									<div class="menu-avatar">
+										<img src="./payment_files/default-user-avatar.png"
+											class="nav-avatar" alt="">
+									</div>
+									<div class="account-name hide-row">龙心七号</div>
+									<ul>
+										<li class="order-list"><a
+											href="http://store.smartisan.com/account/#/order/list">我的订单</a></li>
+										<li class="support-list"><a
+											href="http://store.smartisan.com/account/#/support/list">售后服务</a></li>
+										<li class="coupon-list "><a
+											href="http://store.smartisan.com/account/#/coupon">我的优惠</a></li>
+										<li class="information"><a
+											href="http://store.smartisan.com/account/#/information">账户资料</a></li>
+										<li class="address-list"><a
+											href="http://store.smartisan.com/account/#/address/list">收货地址</a></li>
+										<li class="logout"><a class="js-logout">退出</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="nav-list">
+							<ul>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">历史</a></li>
+								<li><a href="#">相信</a></li>
+								<li><a href="#">营养</a></li>
+								<li><a href="#">加入</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layout-container fn-clear">
+			<div id="main" class="fn-clear" style="min-height: 438px;">
+				<div class="content page-order-payment order-confirm">
+					<div class="gray-box fn-clear">
+						<div class="title">
+							<h2>支付订单</h2>
+						</div>
+						<div class="box-inner order-info">
+							<h3>提交订单成功</h3>
+							<p class="payment-detail">
+								请在 <span>24 小时内</span>完成支付，超时订单将自动取消。
+							</p>
+							<p class="payment-detail">我们将在您完成支付后的 72 小时内发货。</p>
+						</div>
+						<div class="gray-sub-title">选择支付方式</div>
+						<div id="qrcode"></div>
+						<div
+							class="box-inner gray-tags-box choose-payment-box js-choose-payment-panel">
+							<ul class="tag-list fn-clear">
+								<li class="tag-item select-tag"><input type="radio"
+									name="payMenuType" class="fn-hide" value="online"
+									data-id="online"> <span
+									class="blue-radio blue-radio-on" data-radio-name="payMenuType"><a></a></span>
+									平台支付</li>
+								<li class="tag-item"><input type="radio" name="payMenuType"
+									class="fn-hide" value="bank" data-id="bank"> <span
+									class="blue-radio" data-radio-name="payMenuType"><a></a></span>
+									借记卡及信用卡支付</li>
+							</ul>
+							<ul class="con-list fn-clear">
+								<li class="con-item payment-online-panel select-con">
+									<ul class="payment-list fn-clear">
+										<li onclick="payclick('wx_pub_qr')"><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="9" data-id="9"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/weixinpay.png"></li>
+										<li onclick="payclick('alipay_pc_direct')"><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="1" data-id="1"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/alipay.png"></li>
+										<li onclick="payclick('upacp_pc')"><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="3" data-id="3"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/ylpay.png"></li>
+									</ul>
+									<div class="payment-code-panel fn-hide js-payment-code-panel">
+										<div class="weixin-code">
+											<img src="">
+										</div>
+										<p>
+											请使用微信扫一扫<br> 扫描二维码支付
+										</p>
+									</div>
+								</li>
+								<li class="con-item payment-bank-panel">
+									<ul class="payment-list bank-list fn-clear">
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0005" data-id="5_0005"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-icbc.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_4008" data-id="5_4008"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-abc.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_1023" data-id="5_1023"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-boc.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_1010" data-id="5_1010"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-ccb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="7_9999" data-id="7_9999"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-cmb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_1022" data-id="5_1022"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-spdb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0026" data-id="5_0026"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-gdb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_1025" data-id="5_1025"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-bocom.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0028" data-id="5_0028"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-psbc.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0004" data-id="5_0004"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-cncb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0015" data-id="5_0015"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-cmbc.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0027" data-id="5_0027"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-ceb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_1021" data-id="5_1021"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-hxb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0009" data-id="5_0009"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-cib.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0030" data-id="5_0030"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-bos.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0029" data-id="5_0029"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-srcb.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0031" data-id="5_0031"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-pab.png"></li>
+										<li><input type="radio" name="pay_channel_type"
+											class="fn-hide" value="5_0033" data-id="5_0033"> <span
+											class="blue-radio" data-radio-name="pay_channel_type"><a></a></span>
+											<img src="./payment_files/pay-brcb.png"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="box-inner payment-checkout-panel fn-clear">
+							<span class="blue-main-btn big-main-btn js-payment-order fn-hide">
+								<a>现在支付</a>
+							</span> <span class="prices"> 应付金额： <em>¥ 153.00</em>
+							</span>
+						</div>
+					</div>
+					<div class="gray-box fn-clear confirm-detail">
+						<div class="title pre-title columns-title">
+							<h2>订单详情</h2>
+							<span class="status-tip">订单编号：160607308578047</span>
+						</div>
+						<div class="box-inner order-cart banner-cart">
+							<div class="gray-sub-title cart-title">
+								<span class="name">商品名称</span> <span class="subtotal">小计</span>
+								<span class="num">数量</span> <span class="price">单价</span> <span
+									class="discount">优惠</span>
+							</div>
+							<div class="cart">
+								<div class="cart-items fn-clear" data-id="100014801">
+									<div class="prod-info">
+										<div class="items-thumb">
+											<a href="#"
+												target="_blank" title="圣诞节休战"> <img
+												src="./img/library/光明牛奶.jpg">
+											</a>
+										</div>
+										<div class="items-params fn-clear">
+											<h6 class="name">
+												<a href="#" title="圣诞节休战">奇雅光明牛奶</a>
+											</h6>
+											<div class="subtotal">¥ 69.00</div>
+											<div class="num">1</div>
+											<div class="price">¥ 69.00</div>
+										</div>
+										<div class="items-detail fn-clear">
+											<div class="detail">商品编号：100014801</div>
+										</div>
+									</div>
+								</div>
+								<div class="order-discount-line">
+									<p>商品总计：¥ 69.00</p>
+									<p>运费：+ ¥ 15.00</p>
+									<p class="order-total">
+										应付金额： <em>¥ 84.00</em>
+									</p>
+								</div>
+							</div>
+							<div class="gray-sub-title">收货信息</div>
+							<div class="gray-sub-con">
+								<p>姓名：方诗伟</p>
+								<p>联系电话：13185981429</p>
+								<p>详细地址：上海市市辖区浦东新区晨晖路1000号w1座</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="page-loading" style="display: none;">
+			<div class="loading-bar">
+				<img src="./payment_files/i(1).gif" class="loading-icon"
+					alt="?1465192095659&quot;&quot;/"> 页面加载中
+			</div>
+		</div> -->
+	</div>
+	<div class="footer">
+			<div class="service">
+				<div class="inner">
+					<div class="info">
+						<ul>
+							<li><h3>订单服务</h3></li>
+							<li><a href="#">购买指南</a></li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">送货政策</a></li>
+						</ul>
+						<ul>
+							<li><h3>服务支持</h3></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">xxxxx</a></li>
+							<li><a href="#">零售门店</a></li>
+						</ul>
+						<ul>
+							<li><h3>媒体中心</h3></li>
+							<li><a href="#">新闻动态</a></li>
+							<li><a href="#">官方视频</a></li>
+							<li><a href="#">图片资源</a></li>
+						</ul>
+						<ul>
+							<li><h3>关于公司</h3></li>
+							<li><a href="#">公司简介</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+						<ul>
+							<li><h3>关注我们</h3></li>
+							<li><a href="#" target="_blank">新浪微博</a></li>
+							<li show-weixin-code=""><a class="js-weixin">官方微信</a>
+							<div class="mask"></div>
+								<div class="qrcode">
+									<div class="close-btn"></div>
+									<h1>锤子科技官方微信</h1>
+									<h6>打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6>
+									<div class="qrcode-bg"></div>
+								</div></li>
+							<li><a
+								href="#"
+								target="_blank">官方贴吧</a></li>
+						</ul>
+					</div>
+					<div class="online">
+						<p class="fn-clear">
+							<a class="online-support"
+								href="#">在线咨询</a>
+						</p>
+						<p class="tel">
+							<a href="tel:4006190909">400-619-0909</a>
+						</p>
+						<p>周一至周日 9:00-18:00（仅收市话费）</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="inner fn-clear">
+					<div class="copy-label">
+						<div class="copy-text">
+							Copyright © <span class="copyright-time">2016</span>, xxxxx 
+							Co., Ltd. All Rights Reserved. 上海xxxxx有限公司
+						</div>
+						<!-- <a class="icp-text" href="http://www.miibeian.gov.cn/"
+							target="_blank">京ICP备14041720号-1 京ICP证140622号
+							京公网安备11010502025474</a> -->
+					</div>
+					<ul class="privacy">
+						<li><a href="#">法律声明</a></li>
+						<li><a href="#">隐私条款</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<div id="returnTop" class="return-top" style="bottom: -40px;"></div>
+	<!-- <script>var TIMESTAMP="1465192095659",CDN_HOST="http://static.smartisanos.cn/store/asset/";</script>
+	<script src="./payment_files/template.cache-cc7a1aa7.js"></script>
+	<script src="./payment_files/dep-b48e8ab7.js"></script>
+	<script src="./payment_files/base-b19fb268.js"></script>
+	<script src="./payment_files/common-2a10b66e.js"></script>
+	<script src="./payment_files/main-acced8e7.js"></script>
+	<noscript>&lt;iframe
+		src="//www.googletagmanager.com/ns.html?id=GTM-KNJPLV" height="0"
+		width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+	<script>!function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a),s="dataLayer"!=n?"&l="+n:"";m.async=!0,m.src="//www.googletagmanager.com/gtm.js?id="+r+s,g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer","GTM-KNJPLV");</script>
+	<div class="module-dialog-layer"></div>
+	<script type="text/javascript" id="">(function(){var a="\/order\/payment\/160607308578047";setTimeout(function(){ga("send","pageview",a)},200)})();</script>
+	<script type="text/javascript" id="">(function(d,b){var h=/iphone|android|ucweb|ucbrowser|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|mobile/i.test(navigator.userAgent.toLowerCase())&&!/ipad/i.test(navigator.userAgent.toLowerCase());(function(a,c,b,e,f,g,d){a.GoogleAnalyticsObject=f;a[f]=a[f]||function(){(a[f].q=a[f].q||[]).push(arguments)};a[f].l=1*new Date;g=c.createElement(b);d=c.getElementsByTagName(b)[0];g.async=1;g.src=e;d.parentNode.insertBefore(g,d)})(d,b,"script","//www.google-analytics.com/analytics.js",
+"ga");ga("create","UA-49819160-1","auto");ga("require","linkid");var e=d._smq=e||[];(function(){h?e.push(["_setAccount","c49db6",new Date]):e.push(["_setAccount","1759758",new Date]);e.push(["_setDomainName",".smartisan.com"]);e.push(["pageview"]);var a=b.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==b.location.protocol?"https://":"http://")+"cdnmaster.com/sitemaster/collect.js";var c=b.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,
+c)})();(function(){var a=b.createElement("script");a.src="//hm.baidu.com/hm.js?482e5a238e881dd62851ca123d8b11f3";var c=b.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)})();var k=d._mdsp=[];k.push(["?s\x3d1073741964","\x26ref\x3d"+encodeURIComponent(b.referrer),"\x26sType\x3deng"]);(function(a){var c=b.createElement("script");c.type="text/javascript";c.async=!0;c.src=("https:"==b.location.protocol?"https://d.1rtb.com":"http://d.1rtb.com")+a;a=b.getElementsByTagName("script")[0];a.parentNode.insertBefore(c,
+a)})("/js/td.js")})(window,document);</script> -->
+
+</body>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script src="js/pingpp-pc.js"></script>
+<script type="text/javascript" src="js/payment.js"></script>
+
+</html>

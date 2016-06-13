@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.smartisan.com/cn/#/item/100014801 -->
+<html lang="zh" ng-app="indexApp"
+	class="cn opacity supports csstransforms3d csstransitions">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8"; 
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>奇雅光明牛奶</title>
+<link href="http://static.smartisanos.cn/common/img/favicon.ico"
+	rel="shortcut icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_114.png"
+	rel="apple-touch-icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_76.png"
+	sizes="76x76" rel="apple-touch-icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_120.png"
+	sizes="120x120" rel="apple-touch-icon">
+<link href="http://static.smartisanos.cn/common/img/favicon_152.png"
+	sizes="152x152" rel="apple-touch-icon">
+<link rel="stylesheet" href="./milk_files/base_0372caa6c5.css">
+<link rel="stylesheet" href="./milk_files/main_dc451955f5.css">
+<!--[if lte IE 7]>
+ <script src="http://static.smartisanos.cn/common/js/update-browser.js"></script>
+ <![endif]-->
+<!-- <script type="text/javascript" async="" src="./milk_files/analytics.js"></script>
+<script type="text/javascript" async="" src="./milk_files/linkid.js"></script>
+<script type="text/javascript" async="" src="./milk_files/collect.js"></script>
+<script type="text/javascript" async="" src="./milk_files/td.js"></script>
+<script src="./milk_files/hm.js"></script>
+<script async="" src="./milk_files/analytics.js"></script>
+<script async="" src="./milk_files/gtm.js"></script>
+<script type="text/javascript">
+	// if( (/http\:\/\/t\.smartisan\.com\/smartisan\/modules\/index\/\#\/$/g).test(location.href)) {
+	if ((/http\:\/\/www\.smartisan\.com.$/g).test(location.href)
+			|| (/http\:\/\/www\.smartisan\.com\/\#\/$/g).test(location.href)) {
+		// ['ja', 'en-GB', 'en', 'en-US', 'fr', 'es', 'ko', 'de'];
+		// 首页，如果是英文环境，则跳到 en
+		if ((/en/gi).test(navigator.language)) {
+			location.href = 'http://www.smartisan.com/en/';
+		}
+		// 首页，如果是日文环境，则跳到 jp
+		else if ((/(jp|ja)/gi).test(navigator.language)) {
+			location.href = 'http://www.smartisan.com/jp/';
+		}
+	}
+</script> -->
+</head>
+<body>
+	<div class="wrapper app-page-item" ng-controller="MainCtrl"
+		ng-class="{&#39;page-is-loading&#39;: pageLoading}">
+		<!-- ngIf: lang != 'en' && lang != 'jp' -->
+		<div class="header ng-scope"
+			ng-if="lang != &#39;en&#39; &amp;&amp; lang != &#39;jp&#39;"
+			route-change-reset-header="" mobile-device="">
+			<div class="header-main">
+				<div class="container">
+					<h1 class="logo">
+						<a href="http://www.smartisan.com/#/home">Smartisan</a>
+					</h1>
+					<div class="nav">
+						<div class="view">
+							<ul class="nav-main" ng-hide="topbarIsStore">
+								<li><a href="#">首页</a></li>
+								<li><a href="#">历史</a></li>
+								<li><a href="#">相信</a></li>
+								<li><a href="#">营养</a></li>
+								<li><a href="#">加入</a></li>
+							</ul>
+							<div class="account-panel">
+								<a class="nav-login"
+									ng-class="{&#39;show&#39;: isLoggedIn === false}"
+									ng-click="login()">登录</a>
+								<div class="account-label show"
+									ng-class="{&#39;show&#39;: isLoggedIn === true}">
+									<span class="account-avatar"></span> <a
+										href="#"
+										class="account-link">个人中心</a>
+									<div class="account-menu">
+										<div class="menu-avatar">
+											<!-- ngIf: !loginUser.avatar_url -->
+											<span ng-if="!loginUser.avatar_url" class="ng-scope"></span>
+											<!-- end ngIf: !loginUser.avatar_url -->
+											<!-- ngIf: loginUser.avatar_url -->
+										</div>
+										<div class="account-name hide-row ng-binding">龙心七号</div>
+										<ul>
+											<li class="order-list"><a
+												href="#">我的订单</a></li>
+											<li class="support-list"><a
+												href="#">售后服务</a></li>
+											<li class="coupon"><a
+												href="#">我的优惠</a></li>
+											<li class="information"><a
+												href="#">账户资料</a></li>
+											<li class="address-list"><a
+												href="#">收货地址</a></li>
+											<li class="logout"><a ng-click="logout()">退出</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end ngIf: lang != 'en' && lang != 'jp' -->
+		<!-- ngIf: lang == 'en' -->
+		<!-- ngIf: lang == 'jp' -->
+		<script type="text/javascript">
+			function mover(div){
+				console.log(div.classList);
+				div.classList.add('cart-label-hover');
+			}
+			function mout(div){
+				console.log(div);
+				div.classList.remove('cart-label-hover');
+			}
+		</script>
+		<div class="main">
+			<div id="sub-nav" class="layout-sub-header ">
+				<div class="sub-nav-fix-panel">
+					<div class="header-container clearfix js-sub-nav-container">
+						<div class="header-cart-panel">
+							<div id="js-main-cart-panel" class="cart-label ng-isolate-scope"
+								onmouseover="mover(this);" onmouseout="mout(this);"
+								cart-main="" options="">
+								<a href="./shoppingcart.html" class="cart-link">购物车</a>
+								<div class="addcart-mask">
+									<div class="mask-y">
+										<div class="mask-x">
+											<div class="mask-item"></div>
+										</div>
+									</div>
+								</div>
+								<span class="cart-num"><span class="cart-empty-num">0</span>
+									<span class="cart-full-num ng-binding cart-full-num-active"
+									ng-bind="num || 0">2</span></span>
+								<div ng-show="isCartLoading"
+									class="cart-con cart-empty-con ng-hide">
+									<div class="cart-loading"></div>
+								</div>
+								<div ng-show="!isCartLoading" class="cart-con"
+									ng-class="{&#39;cart-empty-con&#39;: !carts.length}">
+									<ul>
+										<!-- ngRepeat: (key, cart) in carts -->
+										<li ng-repeat="(key, cart) in carts" class="clearfix ng-scope"
+											data-id="100013618" data-mobile=""><div class="thumb">
+												<img
+													ng-src="http://img01.smartisanos.cn/16/1000136/100013618/76B99D22ECB4EA7CD95D90B4617C8B92/80X80.jpg"
+													src="./img/library/奇雅月饼.jpg">
+											</div>
+											<div class="desc">
+												<p class="cart-name hide-row">
+													<!-- ngIf: cart.link -->
+													<a href="#"
+														ng-if="cart.link" class="ng-binding ng-scope">奇雅月饼</a>
+													<!-- end ngIf: cart.link -->
+													<!-- ngIf: !cart.link -->
+												</p>
+												<!-- ngIf: cart.subName -->
+												<!-- end ngIf: cart.subName -->
+												<p>
+													<span class="cart-price ng-binding"
+														ng-bind="cart.price | rmb:true">¥ 199.00</span>
+													<!-- ngIf: !!cart.num -->
+													<span class="cart-single-num ng-binding ng-scope"
+														ng-if="!!cart.num" ng-bind="&#39;x &#39; + cart.num">x
+														1</span>
+													<!-- end ngIf: !!cart.num -->
+												</p>
+											</div>
+											<a class="dark-del-btn js-delete-cart"
+											ng-click="removeCart($event)">删除</a></li>
+										<!-- end ngRepeat: (key, cart) in carts -->
+										<li ng-repeat="(key, cart) in carts" class="clearfix ng-scope"
+											data-id="100014801" data-mobile=""><div class="thumb">
+												<img
+													ng-src="http://img01.smartisanos.cn/67/100014801/29C1ECDFE71657216687986EDB2F0BC3/1450756133/80X80.jpg"
+													src="./img/library/光明牛奶.jpg">
+											</div>
+											<div class="desc">
+												<p class="cart-name hide-row">
+													<!-- ngIf: cart.link -->
+													<a href="#"
+														ng-if="cart.link" class="ng-binding ng-scope">奇雅光明牛奶</a>
+													<!-- end ngIf: cart.link -->
+													<!-- ngIf: !cart.link -->
+												</p>
+												<!-- ngIf: cart.subName -->
+												<!-- end ngIf: cart.subName -->
+												<p>
+													<span class="cart-price ng-binding"
+														ng-bind="cart.price | rmb:true">¥ 69.00</span>
+													<!-- ngIf: !!cart.num -->
+													<span class="cart-single-num ng-binding ng-scope"
+														ng-if="!!cart.num" ng-bind="&#39;x &#39; + cart.num">x
+														1</span>
+													<!-- end ngIf: !!cart.num -->
+												</p>
+											</div>
+											<a class="dark-del-btn js-delete-cart"
+											ng-click="removeCart($event)">删除</a></li>
+										<!-- end ngRepeat: (key, cart) in carts -->
+									</ul>
+									<div class="cart-con-detail">
+										<p class="acount ng-binding">共 2 件商品</p>
+										<a href="./shoppingcart.html" class="show-all">查看所有商品
+											<img src="./milk_files/cart-blue-arrow_d04f80f37f.png"
+											class="cart-arrow">
+										</a>
+									</div>
+									<div class="cart-con-bottom">
+										<div class="cart-total">
+											合计：<em>¥</em> <span ng-bind="total | floatNumber:true"
+												class="ng-binding">268.00</span>
+										</div>
+										<a href="./shoppingcart.html"
+											class="cart-checkout-btn">现在结算</a>
+									</div>
+									<div class="empty">您的购物车还未添加商品</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-nav"
+							ng-class="{&#39;right-nav-hide&#39;: !!mainConfig.useGoodsDiscount520Data}">
+							<a href="http://www.smartisan.com/#/cdkey" target="_blank">优先购买码</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-loading" style="display: none;">页面加载中...</div>
+			<!-- ngView:  -->
+			<div ng-view="" autoscroll="true" ng-show="!pageLoading"
+				class="ng-scope">
+				<div class="store-content ng-scope">
+					<div class="item-wrapper">
+						<div class="gray-box clearfix">
+							<div class="gallery">
+								<ul class="thumb">
+									<!-- ngRepeat: i in sku['shop_info'].images -->
+									<li ng-repeat="i in sku[&#39;shop_info&#39;].images" class="on"><img
+										ng-src="http://img01.smartisanos.cn/67/100014801/29C1ECDFE71657216687986EDB2F0BC3/1450756133/527X527.jpg"
+										src="./img/library/光明牛奶.jpg"></li>
+									<!-- end ngRepeat: i in sku['shop_info'].images -->
+									<li ng-repeat="i in sku[&#39;shop_info&#39;].images" class=""><img
+										ng-src="http://img01.smartisanos.cn/67/100014801/4BE39EFAD5F117F2C874E920416DC03D/1450756133/527X527.jpg"
+										src="./img/library/光明牛奶.jpg"></li>
+									<!-- end ngRepeat: i in sku['shop_info'].images -->
+								</ul>
+								<ul class="thumbnail">
+									<!-- ngRepeat: i in sku['shop_info'].images -->
+									<li ng-repeat="i in sku[&#39;shop_info&#39;].images" class="on"><a
+										ng-click="activeThumbnail($index)"><img
+											ng-src="http://img01.smartisanos.cn/67/100014801/29C1ECDFE71657216687986EDB2F0BC3/1450756133/60X60.jpg"
+											src="./img/library/光明牛奶.jpg"></a></li>
+									<!-- end ngRepeat: i in sku['shop_info'].images -->
+									<li ng-repeat="i in sku[&#39;shop_info&#39;].images" class=""><a
+										ng-click="activeThumbnail($index)"><img
+											ng-src="http://img01.smartisanos.cn/67/100014801/4BE39EFAD5F117F2C874E920416DC03D/1450756133/60X60.jpg"
+											src="./img/library/光明牛奶.jpg"></a></li>
+									<!-- end ngRepeat: i in sku['shop_info'].images -->
+								</ul>
+								<a class="thumb-pre" ng-click="preNextThumbnail(&#39;pre&#39;)"><span></span></a>
+								<a class="thumb-next"
+									ng-click="preNextThumbnail(&#39;next&#39;)"><span></span></a>
+							</div>
+							<div class="selection">
+								<div class="sku-custom-title">
+									<h4 class="ng-binding">奇雅光明牛奶</h4>
+								</div>
+								<!-- ngIf: sku.sale_status != 2 -->
+								<div ng-if="sku.sale_status != 2"
+									class="sku-custom-storenum ng-scope">
+									<span class="params-name">价格</span><span
+										class="params-price highlight">¥<i
+										ng-bind="sku.price | number | decimal" class="ng-binding">69</i></span>
+									<!-- ngIf: sku.is_custom -->
+									<!-- ngIf: sku.in_stock && sku.stock && sku.stock <= 5 -->
+								</div>
+								<!-- end ngIf: sku.sale_status != 2 -->
+								<!-- ngIf: sku.isDiscountGoods -->
+								<!-- ngIf: !sku['shop_info'].is_doodle -->
+								<!-- ngIf: sku.sale_status == 2 || !sku['in_stock'] -->
+								<!-- ngIf: sku['in_stock'] && sku.sale_status==3 -->
+								<div
+									ng-if="sku[&#39;in_stock&#39;] &amp;&amp; sku.sale_status==3"
+									class="cart-operation-wrapper ng-scope">
+									<div class="item-num js-select-quantity" data-id="100014801"
+										data-max="2 " options="cartConfig"
+										value="sku[&#39;product_info&#39;].num" sku="100014801"
+										min="0">
+										<span class="down" ng-click="down($event)">-</span> <span
+											class="num"><input type="text" ng-model="value"
+											class="ng-pristine ng-valid">
+										<ul>
+												<!-- ngRepeat: i in arr -->
+												<li ng-repeat="i in arr" ng-bind="i"
+													class="ng-binding ng-scope">1</li>
+												<!-- end ngRepeat: i in arr -->
+												<li ng-repeat="i in arr" ng-bind="i"
+													class="ng-binding ng-scope">2</li>
+												<!-- end ngRepeat: i in arr -->
+											</ul></span> <span class="up" ng-click="up($event)">+</span>
+									</div>
+									<!-- ngIf: sku['shop_info'].is_custom -->
+									<span class="addcart-wrapper">
+										<!-- ngIf: !sku['shop_info'].is_custom -->
+										<span ng-if="!sku[&#39;shop_info&#39;].is_custom"
+										class="blue-title-btn js-add-cart ng-scope"
+										ng-click="addCart($event)"><a>加入购物车</a></span>
+									<!-- end ngIf: !sku['shop_info'].is_custom -->
+									</span>
+								</div>
+								<!-- end ngIf: sku['in_stock'] && sku.sale_status==3 -->
+								<div class="sku-custom-tips">
+									<!-- ngIf: sku['shop_info'].is_custom -->
+									<!-- ngIf: !sku['shop_info'].is_custom -->
+									<h6 ng-if="!sku[&#39;shop_info&#39;].is_custom"
+										class="ng-binding ng-scope">购物满 150 元免运费</h6>
+									<!-- end ngIf: !sku['shop_info'].is_custom -->
+								</div>
+								<div class="cart-tip-diag gray-box clearfix absolute">
+									<h4>已添加至购物车</h4>
+									<span class="light-gray-btn js-off-cart"
+										ng-click="hideCartTipDiag()"><a>继续购买</a></span> <span
+										class="blue-btn js-on-cart" ng-click="jumpToCart()"><a>现在结算</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="item-params-box gray-box clearfix">
+							<div class="title pre-title">
+								<h2>产品信息</h2>
+							</div>
+							<div class="item-info anchor-to">
+								<!-- ngRepeat: img in sku['spu']['shop_info']['tpl_content'].list -->
+								<img
+									ng-repeat="img in sku[&#39;spu&#39;][&#39;shop_info&#39;][&#39;tpl_content&#39;].list"
+									real-src="http://img01.smartisanos.cn/FD/1000148/pieces/1_1450756150_detail.jpg"
+									class="ng-scope" src="./milk_files/1_1450756150_detail.jpg">
+								<!-- end ngRepeat: img in sku['spu']['shop_info']['tpl_content'].list -->
+								<img
+									ng-repeat="img in sku[&#39;spu&#39;][&#39;shop_info&#39;][&#39;tpl_content&#39;].list"
+									real-src="http://img01.smartisanos.cn/FD/1000148/pieces/2_1450756150_detail.jpg"
+									class="ng-scope" src="./milk_files/2_1450756150_detail.jpg">
+								<!-- end ngRepeat: img in sku['spu']['shop_info']['tpl_content'].list -->
+								<img
+									ng-repeat="img in sku[&#39;spu&#39;][&#39;shop_info&#39;][&#39;tpl_content&#39;].list"
+									real-src="http://img01.smartisanos.cn/FD/1000148/pieces/3_1450756150_detail.jpg"
+									class="ng-scope" src="./milk_files/3_1450756150_detail.jpg">
+								<!-- end ngRepeat: img in sku['spu']['shop_info']['tpl_content'].list -->
+								<img
+									ng-repeat="img in sku[&#39;spu&#39;][&#39;shop_info&#39;][&#39;tpl_content&#39;].list"
+									real-src="http://img01.smartisanos.cn/FD/1000148/pieces/4_1450756150_detail.jpg"
+									class="ng-scope" src="./milk_files/4_1450756150_detail.jpg">
+								<!-- end ngRepeat: img in sku['spu']['shop_info']['tpl_content'].list -->
+							</div>
+							<!-- ngIf: sku.detail_md.length -->
+						</div>
+					</div>
+					<div class="fixed-nav" style="opacity: 0; display: none;">
+						<div class="fixed-nav-inner">
+							<div>
+								<img
+									ng-src="http://img01.smartisanos.cn/67/100014801/29C1ECDFE71657216687986EDB2F0BC3/1450756133/60X60.jpg"
+									class="fixed-preview" src="./milk_files/60X60.jpg">
+							</div>
+							<div class="nav-item"
+								ng-class="{&#39;price-item-no&#39;: !sku.price || sku.sale_status == 2}">
+								<p class="nav-item-name ng-binding">圣诞节休战</p>
+								<!-- ngIf: !!sku.price && sku.sale_status != 2 -->
+								<p class="nav-item-price ng-binding ng-scope"
+									ng-if="!!sku.price &amp;&amp; sku.sale_status != 2">¥ 69</p>
+								<!-- end ngIf: !!sku.price && sku.sale_status != 2 -->
+							</div>
+							<div class="nav-item-action js-params-nav">
+								<ul>
+									<li>
+										<!-- ngIf: sku['shop_info'].is_custom --> <!-- ngIf: !sku['shop_info'].is_custom -->
+										<span ng-if="!sku[&#39;shop_info&#39;].is_custom"
+										class="ng-scope">
+											<!-- ngIf: !sku.in_stock || sku.sale_status == 2 --> <!-- ngIf: sku.in_stock && sku.sale_status != 2 -->
+											<a ng-if="sku.in_stock &amp;&amp; sku.sale_status != 2"
+											class="add-cart ng-scope" ng-click="addCart($event)">加入购物车</a>
+										<!-- end ngIf: sku.in_stock && sku.sale_status != 2 -->
+									</span>
+									<!-- end ngIf: !sku['shop_info'].is_custom -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ngIf: lang != 'en' && lang != 'jp' -->
+		<div class="footer ng-scope"
+			ng-if="lang != &#39;en&#39; &amp;&amp; lang != &#39;jp&#39;"
+			route-change-reset-footer="">
+			<div class="container">
+				<div class="siteinfo">
+					<div class="nav">
+						<dl>
+							<dt>
+								<span>订单服务</span><a
+									href="#">订单服务</a>
+							</dt>
+							<dd>
+								<a href="#">购买指南</a>
+							</dd>
+							<dd>
+								<a href="#">支付方式</a>
+							</dd>
+							<dd>
+								<a href="#">送货政策</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>服务支持</span><a
+									href="#">服务支持</a>
+							</dt>
+							<dd>
+								<a href="#">售后服务</a>
+							</dd>
+							<dd>
+								<a href="#">xxxx</a>
+							</dd>
+							<dd>
+								<a href="#">零售门店</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>媒体中心</span><a
+									href="#">媒体中心</a>
+							</dt>
+							<dd>
+								<a href="#">新闻动态</a>
+							</dd>
+							<dd>
+								<a href="#">官方视频</a>
+							</dd>
+							<dd>
+								<a href="#">图片资源</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>关于公司</span><a
+									href="#">关于公司</a>
+							</dt>
+							<dd>
+								<a href="#">公司简介</a>
+							</dd>
+							<dd>
+								<a href="#">加入我们</a>
+							</dd>
+							<dd>
+								<a href="#">联系我们</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>关注我们</span><a href="#">关注我们</a>
+							</dt>
+							<dd>
+								<a href="#" target="_blank">新浪微博</a>
+							</dd>
+							<dd class="weixin" show-weixin-code="">
+								<a>官方微信</a>
+								<div class="mask"></div>
+								<div class="qrcode">
+									<div class="close-btn"></div>
+									<h1>锤子科技官方微信</h1>
+									<h6>打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6>
+									<div class="qrcode-bg"></div>
+								</div>
+							</dd>
+							<dd>
+								<a href="#"
+									target="_blank">官方贴吧</a>
+							</dd>
+						</dl>
+					</div>
+					<ul class="service">
+						<li class="online"><a
+							href="#">在线咨询</a></li>
+						<li class="tel"><a href="tel:4006190909">400-619-0909</a></li>
+						<li class="time">周一至周日 9:00-18:00（仅收市话费）</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<h2>
+						Copyright © <span copyright-year="">2016</span>, XXXXX
+						Co., Ltd. All Rights Reserved.
+					</h2>
+					<h3 class="company">上海XXXXX有限公司</h3>
+					<ul class="privacy">
+						<li><a href="#">法律声明</a></li>
+						<li><a href="#">隐私条款</a></li>
+					</ul>
+					<!-- <h4>
+						<a href="http://www.miibeian.gov.cn/" target="_blank"><span>京ICP备14041720号-1</span><span>京ICP证140622号</span><span>京公网安备11010502025474</span></a>
+					</h4> -->
+				</div>
+			</div>
+		</div>
+		<!-- end ngIf: lang != 'en' && lang != 'jp' -->
+		<!-- ngIf: lang == 'en' -->
+		<!-- ngIf: lang == 'jp' -->
+		<div class="back-top" back-top=""></div>
+	</div>
+	<!-- <noscript>&lt;iframe
+		src="//www.googletagmanager.com/ns.html?id=GTM-TDPXSZ" height=0
+		width=0 style=display:none;visibility:hidden&gt;&lt;/iframe&gt;</noscript> -->
+	<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TDPXSZ');</script> -->
+	<!-- <script src="./milk_files/common_ca40f4fe0c.js"></script>
+	<script src="./milk_files/template_80ff0f7961.js"></script>
+	<script src="./milk_files/app_5eae86595d.js"></script> -->
+	<div temp-dialog="" data-dialog="dialog">
+		<div class="module-dialog-layer"></div>
+		<div class="clearfix  module-dialog"
+			ng-class="{&#39;m-module-dialog&#39;:isMobile, &#39;module-dialog&#39;:!isMobile}"
+			style="z-index:;">
+			<div class="dialog-panel">
+				<div class="topbar" ng-hide="isMobile">
+					<div class="dialog-tit clearfix">
+						<h4 class="js-dialog-title ng-binding"></h4>
+					</div>
+					<span class="dialog-close png"
+						ng-click="dialogContent.dialogCancel()"></span>
+				</div>
+				<div class="dialog-con js-dialog-container">
+					<!-- ngIf: !!dialogContent.message -->
+				</div>
+				<div class="dialog-btn-wrap clearfix ng-hide"
+					ng-show="!isMobile &amp;&amp; dialogContent.hasBtn">
+					<div class="blue-main-btn normal-main-btn js-dialog-done"
+						ng-click="dialogContent.dialogConfirm()">
+						<a class="ng-binding"></a>
+					</div>
+					<div class="gray-normal-btn js-dialog-cancel ng-hide"
+						ng-show="dialogContent.hasCancel"
+						ng-click="dialogContent.dialogCancel()">
+						<a class="ng-binding"></a>
+					</div>
+				</div>
+				<div class="dialog-btn-wrap clearfix ng-hide"
+					ng-show="isMobile &amp;&amp; dialogContent.hasBtn">
+					<!-- ngIf: dialogContent.hasCancel -->
+					<div class="dialog-btn" ng-click="dialogContent.dialogConfirm()">
+						<a class="ng-binding"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" id="">(function(a,b,f,g,c,d,e){a.GoogleAnalyticsObject=c;a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[c].l=1*new Date;d=b.createElement(f);e=b.getElementsByTagName(f)[0];d.async=1;d.src=g;e.parentNode.insertBefore(d,e)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-49819160-1","auto");ga("require","linkid");var _hmt=_hmt||[];
+(function(){var a=document.createElement("script");a.src="//hm.baidu.com/hm.js?482e5a238e881dd62851ca123d8b11f3";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();var _mdsp=[];_mdsp.push(["?s\x3d1073741964","\x26ref\x3d"+encodeURIComponent(document.referrer),"\x26sType\x3deng"]);var refererUrl=document.referrer,ro="1073741964",path="/js/td.js";
+(function(a){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"==document.location.protocol?"https://d.1rtb.com":"http://d.1rtb.com")+a;a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})(path);var _smq=_smq||[];
+/iphone|android|ucweb|ucbrowser|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|mobile/i.test(navigator.userAgent.toLowerCase())?_smq.push(["_setAccount","c49db6",new Date]):_smq.push(["_setAccount","1759758",new Date]);_smq.push(["_setDomainName","smartisan.com"]);_smq.push(["pageview"]);
+(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"cdnmaster.com/sitemaster/collect.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+
+	<script type="text/javascript" id="">(function(){var a="\/cn\/home";setTimeout(function(){ga("send","pageview",a)})})();</script>
+	<script type="text/javascript" id="">(function(){var a="\/cn\/hd\/qinghuai";setTimeout(function(){ga("send","pageview",a)})})();</script>
+	<script type="text/javascript" id="">(function(){var a="\/cn\/hd\/qinghuai";setTimeout(function(){_smq.push(["pageview",a,document.title])})})();</script>
+	<script type="text/javascript" id="">(function(){var a="\/cn\/item\/100014801";setTimeout(function(){ga("send","pageview",a)})})();</script>
+	<script type="text/javascript" id="">(function(){var a="\/cn\/item\/100014801";setTimeout(function(){_smq.push(["pageview",a,document.title])})})();</script> -->
+</body>
+</html>

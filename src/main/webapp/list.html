@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://www.smartisan.com/cn/#/hd/qinghuai -->
+<html lang="zh" ng-app="indexApp"
+	class="cn opacity supports csstransforms3d csstransitions">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8"; 
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide {
+	display: none !important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-block-transitions {
+	transition: 0s all !important;
+	-webkit-transition: 0s all !important;
+}
+
+.ng-hide-add-active, .ng-hide-remove {
+	display: block !important;
+}
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>商品列表</title>
+<link rel="stylesheet" href="./list_files/base_0372caa6c5.css">
+<link rel="stylesheet" href="./list_files/main_dc451955f5.css">
+<!-- <script type="text/javascript" async="" src="./list_files/linkid.js"></script>
+<script type="text/javascript" async="" src="./list_files/collect.js"></script>
+<script type="text/javascript" async="" src="./list_files/td.js"></script>
+<script src="./list_files/hm.js"></script>
+<script async="" src="./list_files/analytics.js"></script>
+<script async="" src="./list_files/gtm.js"></script>
+<script type="text/javascript">
+	// if( (/http\:\/\/t\.smartisan\.com\/smartisan\/modules\/index\/\#\/$/g).test(location.href)) {
+	if ((/http\:\/\/www\.smartisan\.com.$/g).test(location.href)
+			|| (/http\:\/\/www\.smartisan\.com\/\#\/$/g).test(location.href)) {
+		// ['ja', 'en-GB', 'en', 'en-US', 'fr', 'es', 'ko', 'de'];
+		// 首页，如果是英文环境，则跳到 en
+		if ((/en/gi).test(navigator.language)) {
+			location.href = 'http://www.smartisan.com/en/';
+		}
+		// 首页，如果是日文环境，则跳到 jp
+		else if ((/(jp|ja)/gi).test(navigator.language)) {
+			location.href = 'http://www.smartisan.com/jp/';
+		}
+	}
+</script> -->
+</head>
+<body>
+	<div class="wrapper app-page-qinghuai" ng-controller="MainCtrl"
+		ng-class="{&#39;page-is-loading&#39;: pageLoading}">
+		<!-- ngIf: lang != 'en' && lang != 'jp' -->
+		<div class="header ng-scope"
+			ng-if="lang != &#39;en&#39; &amp;&amp; lang != &#39;jp&#39;"
+			route-change-reset-header="" mobile-device="">
+			<div class="header-main">
+				<div class="container">
+					<h1 class="logo">
+						<a href="http://www.smartisan.com/#/home">Smartisan</a>
+					</h1>
+					<div class="nav">
+						<div class="view">
+							<ul class="nav-main" ng-hide="topbarIsStore">
+								<li><a href="#">首页</a></li>
+								<li><a href="#">历史</a></li>
+								<li><a href="#">相信</a></li>
+								<li><a href="#">营养</a></li>
+								<li><a href="#">加入</a></li>
+							</ul>
+							<div class="account-panel">
+								<a class="nav-login"
+									ng-class="{&#39;show&#39;: isLoggedIn === false}"
+									ng-click="login()">登录</a>
+								<div class="account-label show"
+									ng-class="{&#39;show&#39;: isLoggedIn === true}">
+									<span class="account-avatar"></span> <a
+										href="#"
+										class="account-link">个人中心</a>
+									<div class="account-menu">
+										<div class="menu-avatar">
+											<!-- ngIf: !loginUser.avatar_url -->
+											<span ng-if="!loginUser.avatar_url" class="ng-scope"></span>
+											<!-- end ngIf: !loginUser.avatar_url -->
+											<!-- ngIf: loginUser.avatar_url -->
+										</div>
+										<div class="account-name hide-row ng-binding">龙心七号</div>
+										<ul>
+											<li class="order-list"><a
+												href="#">我的订单</a></li>
+											<li class="support-list"><a
+												href="#">售后服务</a></li>
+											<li class="coupon"><a
+												href="#">我的优惠</a></li>
+											<li class="information"><a
+												href="#">账户资料</a></li>
+											<li class="address-list"><a
+												href="#">收货地址</a></li>
+											<li class="logout"><a ng-click="logout()">退出</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end ngIf: lang != 'en' && lang != 'jp' -->
+		<!-- ngIf: lang == 'en' -->
+		<!-- ngIf: lang == 'jp' -->
+		<script type="text/javascript">
+			function mover(div){
+				console.log(div.classList);
+				div.classList.add('cart-label-hover');
+			}
+			function mout(div){
+				console.log(div);
+				div.classList.remove('cart-label-hover');
+			}
+		</script>
+		<div class="main">
+			<div id="sub-nav" class="layout-sub-header ">
+				<div class="sub-nav-fix-panel">
+					<div class="header-container clearfix js-sub-nav-container">
+						<div class="header-cart-panel">
+							<div id="js-main-cart-panel" class="cart-label ng-isolate-scope"
+								onmouseover="mover(this);" onmouseout="mout(this);"
+								cart-main="" options="">
+								<a href="./shoppingcart.html" class="cart-link">购物车</a>
+								<div class="addcart-mask">
+									<div class="mask-y">
+										<div class="mask-x">
+											<div class="mask-item"></div>
+										</div>
+									</div>
+								</div>
+								<span class="cart-num"><span class="cart-empty-num">0</span>
+									<span class="cart-full-num ng-binding cart-full-num-active"
+									ng-bind="num || 0">2</span></span>
+								<div ng-show="isCartLoading"
+									class="cart-con cart-empty-con ng-hide">
+									<div class="cart-loading"></div>
+								</div>
+								<div ng-show="!isCartLoading" class="cart-con"
+									ng-class="{&#39;cart-empty-con&#39;: !carts.length}">
+									<ul>
+										<!-- ngRepeat: (key, cart) in carts -->
+										<li ng-repeat="(key, cart) in carts" class="clearfix ng-scope"
+											data-id="100013618" data-mobile=""><div class="thumb">
+												<img
+													ng-src="http://img01.smartisanos.cn/16/1000136/100013618/76B99D22ECB4EA7CD95D90B4617C8B92/80X80.jpg"
+													src="./img/library/奇雅月饼.jpg">
+											</div>
+											<div class="desc">
+												<p class="cart-name hide-row">
+													<!-- ngIf: cart.link -->
+													<a href="#"
+														ng-if="cart.link" class="ng-binding ng-scope">奇雅月饼</a>
+													<!-- end ngIf: cart.link -->
+													<!-- ngIf: !cart.link -->
+												</p>
+												<!-- ngIf: cart.subName -->
+												<!-- end ngIf: cart.subName -->
+												<p>
+													<span class="cart-price ng-binding"
+														ng-bind="cart.price | rmb:true">¥ 199.00</span>
+													<!-- ngIf: !!cart.num -->
+													<span class="cart-single-num ng-binding ng-scope"
+														ng-if="!!cart.num" ng-bind="&#39;x &#39; + cart.num">x
+														1</span>
+													<!-- end ngIf: !!cart.num -->
+												</p>
+											</div>
+											<a class="dark-del-btn js-delete-cart"
+											ng-click="removeCart($event)">删除</a></li>
+										<!-- end ngRepeat: (key, cart) in carts -->
+										<li ng-repeat="(key, cart) in carts" class="clearfix ng-scope"
+											data-id="100014801" data-mobile=""><div class="thumb">
+												<img
+													ng-src="http://img01.smartisanos.cn/67/100014801/29C1ECDFE71657216687986EDB2F0BC3/1450756133/80X80.jpg"
+													src="./img/library/光明牛奶.jpg">
+											</div>
+											<div class="desc">
+												<p class="cart-name hide-row">
+													<!-- ngIf: cart.link -->
+													<a href="#"
+														ng-if="cart.link" class="ng-binding ng-scope">奇雅光明牛奶</a>
+													<!-- end ngIf: cart.link -->
+													<!-- ngIf: !cart.link -->
+												</p>
+												<!-- ngIf: cart.subName -->
+												<!-- end ngIf: cart.subName -->
+												<p>
+													<span class="cart-price ng-binding"
+														ng-bind="cart.price | rmb:true">¥ 69.00</span>
+													<!-- ngIf: !!cart.num -->
+													<span class="cart-single-num ng-binding ng-scope"
+														ng-if="!!cart.num" ng-bind="&#39;x &#39; + cart.num">x
+														1</span>
+													<!-- end ngIf: !!cart.num -->
+												</p>
+											</div>
+											<a class="dark-del-btn js-delete-cart"
+											ng-click="removeCart($event)">删除</a></li>
+										<!-- end ngRepeat: (key, cart) in carts -->
+									</ul>
+									<div class="cart-con-detail">
+										<p class="acount ng-binding">共 2 件商品</p>
+										<a href="./shoppingcart.html" class="show-all">查看所有商品
+											<img src="./milk_files/cart-blue-arrow_d04f80f37f.png"
+											class="cart-arrow">
+										</a>
+									</div>
+									<div class="cart-con-bottom">
+										<div class="cart-total">
+											合计：<em>¥</em> <span ng-bind="total | floatNumber:true"
+												class="ng-binding">268.00</span>
+										</div>
+										<a href="./shoppingcart.html"
+											class="cart-checkout-btn">现在结算</a>
+									</div>
+									<div class="empty">您的购物车还未添加商品</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-nav"
+							ng-class="{&#39;right-nav-hide&#39;: !!mainConfig.useGoodsDiscount520Data}">
+							<a href="http://www.smartisan.com/#/cdkey" target="_blank">优先购买码</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-loading" style="display: none;">页面加载中...</div>
+			<!-- ngView:  -->
+			<div ng-view="" autoscroll="true" ng-show="!pageLoading"
+				class="ng-scope">
+				<div class="store-content ng-scope">
+					<div class="theme-cover-wrapper">
+						<!-- ngRepeat: item in cover.list -->
+						<div class="sku-box ng-scope" ng-repeat="item in cover.list">
+							<div class="gray-box clearfix cover-item-100016001"
+								ng-class="{&#39;cover-item-hide&#39;: item.isHide}">
+								<div class="cover">
+									<a href="http://www.smartisan.com/cn/#/item/100016001"><img
+										real-src="http://img01.smartisanos.cn/02/100016001/4CB43E8DC2610CFC3CF747A88A4B6612/1453284000/300X300.jpg"
+										src="./img/library/奇雅月饼.jpg"></a>
+								</div>
+								<div class="story-content">
+									<div class="share">
+										<h2 class="hide-row">
+											<a href="http://www.smartisan.com/cn/#/item/100016001"
+												class="ng-binding">奇雅月饼</a>
+										</h2>
+										<!-- ngIf: item.subtitle -->
+										<!-- end ngIf: item.subtitle -->
+										<span class="sns">分享故事： <a
+											class="share-weibo js-weibo-pv"
+											href="http://service.weibo.com/share/share.php?appkey=&amp;title=%E6%88%91%E5%88%9A%E5%88%9A%E8%B4%AD%E4%B9%B0%E4%BA%86%E2%80%9C%08%E4%B8%99%E7%94%B3%E7%8C%B4%E5%B9%B4%E7%89%B9%E5%88%B6%E2%80%9D%E5%9D%9A%E6%9E%9C%E6%89%8B%E6%9C%BA%E6%83%85%E6%80%80%E8%83%8C%E5%A3%B3%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%B9%9F%E5%96%9C%E6%AC%A2%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%E8%BF%99%E9%87%8C%E8%B4%AD%E4%B9%B0%EF%BC%9A&amp;url=http%3A%2F%2Fwww.smartisan.com%23%2Fitem%2F100016001&amp;pic=http://img01.smartisanos.cn/D4/1000160/D76D7170BEC354CCBEF91243EFE0E439/share.jpg"
+											target="_blank" title="分享到微博" data-sku="100016001"><span>微博</span></a></span>
+									</div>
+									<div class="story">
+										<p>
+											<!-- ngIf: item.thumbContent.length >= 114 -->
+										</p>
+									</div>
+									<div class="info">
+										<div class="price ng-binding">
+											价格： <span class="highlight">¥ <i class="ng-binding">69</i></span>
+										</div>
+										<!-- ngIf: item.is_custom -->
+										<!-- ngIf: !item.is_custom && item.store_nums_out -->
+										<span ng-if="!item.is_custom &amp;&amp; item.store_nums_out"
+											class="jianguo-blue-main-btn big-main-btn disabled-btn ng-scope"><a
+											class="ng-binding">暂时无货</a></span>
+										<!-- end ngIf: !item.is_custom && item.store_nums_out -->
+										<!-- ngIf: !item.is_custom && !item.store_nums_out -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end ngRepeat: item in cover.list -->
+						<div class="sku-box ng-scope" ng-repeat="item in cover.list">
+							<div class="gray-box clearfix cover-item-100014801"
+								ng-class="{&#39;cover-item-hide&#39;: item.isHide}">
+								<div class="cover">
+									<a href="http://www.smartisan.com/cn/#/item/100014801"><img
+										real-src="http://img01.smartisanos.cn/67/100014801/29C1ECDFE71657216687986EDB2F0BC3/1450756133/300X300.jpg"
+										src="./img/library/光明牛奶.jpg"></a>
+								</div>
+								<div class="story-content">
+									<div class="share">
+										<h2 class="hide-row">
+											<a href="http://www.smartisan.com/cn/#/item/100014801"
+												class="ng-binding">奇雅光明牛奶</a>
+										</h2>
+										<!-- ngIf: item.subtitle -->
+										<!-- end ngIf: item.subtitle -->
+										<span class="sns">分享故事： <a
+											class="share-weibo js-weibo-pv"
+											href="http://service.weibo.com/share/share.php?appkey=&amp;title=%E6%88%91%E5%88%9A%E5%88%9A%E8%B4%AD%E4%B9%B0%E4%BA%86%E2%80%9C%08%E5%9C%A3%E8%AF%9E%E8%8A%82%E4%BC%91%E6%88%98%E2%80%9D%E5%9D%9A%E6%9E%9C%E6%89%8B%E6%9C%BA%E6%83%85%E6%80%80%E8%83%8C%E5%A3%B3%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%B9%9F%E5%96%9C%E6%AC%A2%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%E8%BF%99%E9%87%8C%E8%B4%AD%E4%B9%B0%EF%BC%9A&amp;url=http%3A%2F%2Fwww.smartisan.com%23%2Fitem%2F100014801&amp;pic=http://img01.smartisanos.cn/D4/1000148/B17717C3208919AA261189A4D5E0B806/share.jpg"
+											target="_blank" title="分享到微博" data-sku="100014801"><span>微博</span></a></span>
+									</div>
+									<div class="story">
+									</div>
+									<div class="info">
+										<div class="price ng-binding">
+											价格： <span class="highlight">¥ <i class="ng-binding">69</i></span>
+										</div>
+										<!-- ngIf: item.is_custom -->
+										<!-- ngIf: !item.is_custom && item.store_nums_out -->
+										<!-- ngIf: !item.is_custom && !item.store_nums_out -->
+										<span ng-if="!item.is_custom &amp;&amp; !item.store_nums_out"
+											class="jianguo-blue-main-btn big-main-btn js-pv-button ng-scope"
+											data-sku="100014801"><a
+											href="./milk.html">现在购买</a></span>
+										<!-- end ngIf: !item.is_custom && !item.store_nums_out -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ngIf: lang != 'en' && lang != 'jp' -->
+		<div class="footer ng-scope"
+			ng-if="lang != &#39;en&#39; &amp;&amp; lang != &#39;jp&#39;"
+			route-change-reset-footer="">
+			<div class="container">
+				<div class="siteinfo">
+					<div class="nav">
+						<dl>
+							<dt>
+								<span>订单服务</span><a
+									href="#">订单服务</a>
+							</dt>
+							<dd>
+								<a href="#">购买指南</a>
+							</dd>
+							<dd>
+								<a href="#">支付方式</a>
+							</dd>
+							<dd>
+								<a href="#">送货政策</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>服务支持</span><a
+									href="#">服务支持</a>
+							</dt>
+							<dd>
+								<a href="#">售后服务</a>
+							</dd>
+							<dd>
+								<a href="#">xxxxx</a>
+							</dd>
+							<dd>
+								<a href="#">零售门店</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>媒体中心</span><a
+									href="3">媒体中心</a>
+							</dt>
+							<dd>
+								<a href="#">新闻动态</a>
+							</dd>
+							<dd>
+								<a href="#">官方视频</a>
+							</dd>
+							<dd>
+								<a href="#">图片资源</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>关于公司</span><a
+									href="#">关于公司</a>
+							</dt>
+							<dd>
+								<a href="#">公司简介</a>
+							</dd>
+							<dd>
+								<a href="#">加入我们</a>
+							</dd>
+							<dd>
+								<a href="#">联系我们</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<span>关注我们</span><a href="#">关注我们</a>
+							</dt>
+							<dd>
+								<a href=# target="_blank">新浪微博</a>
+							</dd>
+							<dd class="weixin" show-weixin-code="">
+								<a>官方微信</a>
+								<div class="mask"></div>
+								<div class="qrcode">
+									<div class="close-btn"></div>
+									<h1>锤子科技官方微信</h1>
+									<h6>打开微信，点击右上角的“+”，选择“扫一扫”功能，用摄像头对准下方二维码即可。</h6>
+									<div class="qrcode-bg"></div>
+								</div>
+							</dd>
+							<dd>
+								<a href="#"
+									target="_blank">官方贴吧</a>
+							</dd>
+						</dl>
+					</div>
+					<ul class="service">
+						<li class="online"><a
+							href="#">在线咨询</a></li>
+						<li class="tel"><a href="tel:4006190909">400-619-0909</a></li>
+						<li class="time">周一至周日 9:00-18:00（仅收市话费）</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<h2>
+						Copyright © <span copyright-year="">2016</span>, xxxxx
+						Co., Ltd. All Rights Reserved.
+					</h2>
+					<h3 class="company">上海xxxxx有限公司</h3>
+					<ul class="privacy">
+						<li><a href="#">法律声明</a></li>
+						<li><a href="#">隐私条款</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end ngIf: lang != 'en' && lang != 'jp' -->
+		<!-- ngIf: lang == 'en' -->
+		<!-- ngIf: lang == 'jp' -->
+		<div class="back-top" back-top=""></div>
+	</div>
+</body>
+</html>
