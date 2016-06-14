@@ -5,6 +5,7 @@ import static org.junit.Assert.fail;
 
 import org.json.JSONObject;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -27,6 +28,7 @@ RestTemplate resTemplate;
 		fail("Not yet implemented");
 	}
 	
+	@Ignore
 	@Test
 	public void testRestJosnToObject(){
 		JSONObject json = new JSONObject();

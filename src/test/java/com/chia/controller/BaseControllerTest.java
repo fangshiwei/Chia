@@ -4,6 +4,7 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations ={"classpath:chia-servlet.xml",
@@ -11,6 +12,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 		"classpath:chia-dao.xml"}) 
 public class BaseControllerTest extends AbstractTransactionalJUnit4SpringContextTests{
 	
-	
+	protected MockMvc mockMvc;
 
 }
