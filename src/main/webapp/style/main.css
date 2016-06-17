@@ -1,0 +1,407 @@
+header .sticky-header {
+  width: 100%;
+  height: 90px;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  margin: 0px auto;
+  padding: 5px;
+  z-index: 9999;
+  max-width: 1600px;
+  -moz-transition: top .5s, background 0.5s ease-in;
+  -webkit-transition: top .5s, background 0.5s ease-in;
+  -o-transition: top .5s, background 0.5s ease-in;
+  transition: top .5s, background 0.5s ease-in; }
+header .ticky-header-static-bg {
+  background-color: transparent; }
+header .ticky-header-dynamic-bg {
+  background-color: rgba(191, 175, 152, 0.9); }
+header .hide-sticky-header {
+  top: -90px; }
+header .show-sticky-header {
+  top: 0; }
+header .header-left {
+  padding-left: 100px; }
+  header .header-left .logo {
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden; }
+    header .header-left .logo img {
+      width: 100%;
+      height: 100%; }
+header nav {
+  overflow: hidden;
+  padding-top: 30px;
+  padding-left: 0px; }
+  header nav ul, header nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  header nav li {
+    cursor: pointer;
+    line-height: 22px;
+    float: left;
+    padding: 0px;
+    padding-right: 5%; }
+    header nav li a, header nav li a:hover, header nav li a:focus, header nav li a:visited {
+      color: #FFFFFF; }
+    header nav li h5 {
+      padding: 0 15px 5px 15px; }
+    header nav li .active {
+      border-bottom: 1px solid white; }
+
+.vvl-chia .banner {
+  position: relative;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1000px;
+  background: url("images/image 2.png") top center no-repeat; }
+  .vvl-chia .banner .mark {
+    background-color: rgba(156, 142, 104, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .vvl-chia .banner h1 {
+    opacity: 1;
+    margin-top: 310px;
+    font-size: 80px;
+    font-weight: normal; }
+  .vvl-chia .banner h3 {
+    margin-top: 26px;
+    font-weight: normal; }
+  .vvl-chia .banner .btn-buy {
+    border-radius: 30px;
+    font-size: 26px;
+    border-width: 3px;
+    margin-top: 32px;
+    width: 240px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: #FFFFFF; }
+  .vvl-chia .banner .btn-buy:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+  .vvl-chia .banner .brand-box {
+    color: #BBB5A9;
+    margin-top: 312px;
+    font-size: 18px;
+    width: 210px; }
+    .vvl-chia .banner .brand-box ul, .vvl-chia .banner .brand-box li {
+      margin: 0px;
+      padding: 0px;
+      list-style: none; }
+    .vvl-chia .banner .brand-box li {
+      width: 70px;
+      float: left; }
+    .vvl-chia .banner .brand-box .border-right {
+      border-right: 1px solid #BBB5A9; }
+
+.vvl-history .section-1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  background: #F3F2ED; }
+  .vvl-history .section-1 .left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative; }
+    .vvl-history .section-1 .left img {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+  .vvl-history .section-1 .right {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block;
+    height: 100%;
+    padding: 75px 3%;
+    font-size: 16px;
+    color: #424753; }
+    .vvl-history .section-1 .right .title {
+      font-size: 28px; }
+    .vvl-history .section-1 .right .subtitle {
+      line-height: 50px; }
+    .vvl-history .section-1 .right .col-content {
+      width: 84px;
+      float: left;
+      line-height: 32px;
+      padding: 32px 32px 0px 32px; }
+.vvl-history .section-2 {
+  height: 511px;
+  padding: 0 12%; }
+  .vvl-history .section-2 > div {
+    height: 100%; }
+  .vvl-history .section-2 .subsec {
+    height: 100%;
+    float: left;
+    width: 33%;
+    padding: 85px 40px 0px 40px;
+    background-color: white; }
+    .vvl-history .section-2 .subsec .circle {
+      width: 90px;
+      height: 90px;
+      border: 5px solid #F5F5F5;
+      margin: 0 auto;
+      border-radius: 50%; }
+    .vvl-history .section-2 .subsec .title {
+      margin-top: 48px;
+      font-size: 30px;
+      font-weight: bold; }
+    .vvl-history .section-2 .subsec hr {
+      margin-top: 31px;
+      border-bottom: 1px solid #F5F5F5;
+      width: 80%; }
+    .vvl-history .section-2 .subsec .content {
+      margin-top: 25px;
+      line-height: 2;
+      letter-spacing: 3px; }
+.vvl-history .filmlet {
+  width: 100%;
+  height: 600px;
+  background: url("images/filmlet-placeholder.png") top center no-repeat; }
+
+.vvl-user-case {
+  width: 100%;
+  background: #F3F2ED;
+  /*****************************
+   * USER CASE
+   ****************************/ }
+  .vvl-user-case .title {
+    font-size: 30px;
+    padding-top: 90px; }
+  .vvl-user-case .sub-title {
+    letter-spacing: 3px; }
+  .vvl-user-case .carousel-3d .slide-3d {
+    border-color: #BFAF98;
+    box-shadow: 0px 3px 3px 3px #D8D8D8;
+    background: #FFFFFF; }
+  .vvl-user-case .user-group {
+    padding-top: 10px;
+    height: 700px; }
+    .vvl-user-case .user-group .group-card {
+      background-color: #FFFFFF; }
+      .vvl-user-case .user-group .group-card .card-header:active {
+        color: #FFFFFF; }
+      .vvl-user-case .user-group .group-card .card-header {
+        font-size: 26px;
+        line-height: 2;
+        color: #FFFFFF;
+        background-color: #BFAF98; }
+      .vvl-user-case .user-group .group-card .card-content {
+        padding: 0px 7%; }
+        .vvl-user-case .user-group .group-card .card-content .border-top {
+          border-top: 1px solid #D8D8D8; }
+        .vvl-user-case .user-group .group-card .card-content .card-text {
+          line-height: 2.5;
+          letter-spacing: 2px; }
+        .vvl-user-case .user-group .group-card .card-content .card-avatar {
+          border-radius: 50%;
+          background-color: rgba(255, 0, 0, 0.5);
+          width: 180px;
+          height: 180px;
+          margin: 0 auto;
+          background: url("images/img6.png") top center no-repeat;
+          -moz-background-size: 100% 100%;
+          background-size: 100% 100%; }
+        .vvl-user-case .user-group .group-card .card-content .card-button {
+          width: 66%;
+          height: 60px;
+          border-radius: 30px;
+          margin: 25px auto;
+          padding: 14px;
+          font-size: 20px;
+          color: #FFFFFF;
+          background: #BFAF98; }
+  .vvl-user-case .user-case {
+    position: relative;
+    width: 100%;
+    height: 443px;
+    background: url("images/user-case-bg.png") top center no-repeat;
+    color: #FFFFFF; }
+    .vvl-user-case .user-case .mask {
+      width: 100%;
+      height: 443px;
+      background-color: rgba(156, 142, 104, 0.5);
+      padding-top: 50px;
+      position: relative; }
+      .vvl-user-case .user-case .mask .uc-avatar {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        border: 2px solid white; }
+      .vvl-user-case .user-case .mask .uc-line {
+        width: 40px; }
+      .vvl-user-case .user-case .mask .uc-nav {
+        width: 320px;
+        left: 50%;
+        margin-left: -160px;
+        bottom: 35px;
+        position: absolute; }
+        .vvl-user-case .user-case .mask .uc-nav li {
+          margin-right: 10px; }
+        .vvl-user-case .user-case .mask .uc-nav img {
+          cursor: pointer;
+          width: 45px;
+          height: 45px; }
+        .vvl-user-case .user-case .mask .uc-nav .active {
+          width: 56px; }
+          .vvl-user-case .user-case .mask .uc-nav .active img {
+            width: 56px;
+            height: 56px; }
+
+.vvl-nutrition {
+  width: 100%; }
+  .vvl-nutrition .nutrition-components {
+    padding-top: 40px;
+    height: 1056px; }
+    .vvl-nutrition .nutrition-components h4 {
+      margin-top: 30px;
+      margin-bottom: 22px; }
+    .vvl-nutrition .nutrition-components .boxes {
+      width: 1108px;
+      margin: 0 auto; }
+      .vvl-nutrition .nutrition-components .boxes .box {
+        float: left; }
+        .vvl-nutrition .nutrition-components .boxes .box img {
+          width: 100%; }
+      .vvl-nutrition .nutrition-components .boxes .text-block {
+        color: white;
+        text-align: left;
+        padding: 40px 50px 0 50px;
+        background: #877A58;
+        opacity: .5;
+        width: 570px;
+        height: 402px; }
+        .vvl-nutrition .nutrition-components .boxes .text-block h4 {
+          margin-top: auto;
+          line-height: 1.5; }
+        .vvl-nutrition .nutrition-components .boxes .text-block p {
+          font-size: 16px;
+          margin-top: 25px; }
+  .vvl-nutrition .nutrition-charts {
+    height: 527px;
+    padding-top: 30px;
+    background-color: #F3F2ED; }
+    .vvl-nutrition .nutrition-charts img {
+      width: 95%; }
+
+.vvl-join {
+  width: 100%;
+  height: 557px;
+  padding-right: 385px;
+  padding-top: 82px;
+  background-color: white;
+  background: url("images/Image 5933.png") top right no-repeat; }
+  .vvl-join .text-1 {
+    font-size: 28px; }
+  .vvl-join .text-2 {
+    font-size: 26px;
+    font-weight: bold; }
+
+footer {
+  min-height: 289px;
+  padding-top: 56px;
+  color: white;
+  min-width: 1200px;
+  background-color: #313038; }
+  footer .join-form {
+    padding-left: 17%;
+    padding-right: 5%;
+    margin-bottom: 36px; }
+    footer .join-form .input-group-lg > .form-control, footer .join-form .input-group-lg > .input-group-addon {
+      height: 60px; }
+    footer .join-form .btn-order {
+      font-size: 22px;
+      color: white;
+      background-color: #9C8E68;
+      border-color: #877A58;
+      width: 260px;
+      height: 60px;
+      border-radius: 30px; }
+    footer .join-form .btn-order:hover {
+      color: white;
+      background-color: #9C8E68;
+      opacity: .9;
+      border-color: #877A58; }
+  footer .logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden; }
+    footer .logo img {
+      width: 100%;
+      height: 100%; }
+  footer .copyright {
+    padding-top: 22px;
+    padding-left: 45px;
+    font-size: 12px;
+    letter-spacing: 1px; }
+  footer nav {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-left: 30px; }
+    footer nav ul, footer nav li {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+    footer nav li {
+      cursor: pointer;
+      line-height: 22px;
+      float: left;
+      padding: 0 6px;
+      padding-right: 5%; }
+      footer nav li a, footer nav li a:hover, footer nav li a:focus, footer nav li a:visited {
+        color: #FFFFFF; }
+      footer nav li h5 {
+        padding: 0 15px 5px 15px; }
+      footer nav li .active {
+        border-bottom: 1px solid white; }
+
+body {
+  text-align: center; }
+
+a, a:focus, a:active, a:visited {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+a:hover {
+  color: #000000;
+  text-decoration: none; }
+
+.padding-top {
+  padding-top: 10px; }
+
+.inline-block {
+  display: inline-block;
+  text-align: center; }
+
+.nav ul, .nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+.nav li {
+  float: left; }
+
+.chia-template {
+  border: 0px;
+  padding: 0px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-width: 1200px; }
+
+/*# sourceMappingURL=main.css.map */

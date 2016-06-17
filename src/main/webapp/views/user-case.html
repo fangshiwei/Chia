@@ -1,0 +1,61 @@
+<div class="vvl-user-case">
+
+    <p class="title">唯渥乐奇雅 看得到的健康</p>
+
+    <p class="sub-title">带给国人真正卓越的健康理念和超级功效</p>
+
+    <div class="user-group">
+
+        <carousel3d ng-model="slides" options="options">
+            <carousel3d-slide ng-repeat="slide in slides track by $index">
+                <div class="group-card">
+                    <p class="card-header" ng-bind="slide.caption"></p>
+
+                    <div class="card-content">
+                        <p class="card-text">“相信我的身体，相信我的能力”</p>
+
+                        <p class="card-avatar"></p>
+
+                        <p style="height: 15px"></p>
+
+                        <p class="card-text border-top">运动健身是重要的生活方式，当健身训练成为常态，饮食方式也会随之改变。。。</p>
+
+                        <p class="card-text border-top">食用建议：保证营养摄入。。。</p>
+
+                        <p class="card-text border-top">精美食谱：唯渥乐奇雅能量水</p>
+
+                        <div class="card-button">我爱健身！</div>
+                    </div>
+                </div>
+            </carousel3d-slide>
+        </carousel3d>
+    </div>
+    <!------------------------------>
+    <!-- USER CASE                -->
+    <!------------------------------>
+    <div class="user-case">
+        <div class="mask">
+            <slick id="usercase" infinite="true" slides-to-show="1" slides-to-scroll="1" autoplay="true"
+                   autoplay-speed="2000"
+                   arrows="false">
+                <div ng-repeat="item in userCaseList" id="{{item.id}}">
+                    <div class="uc-avatar"
+                         style="background: url({{item.src}}) top center no-repeat;background-size: 100% 100%;"></div>
+                    <h2><br>“吃了奇雅子，我的身体倍儿好，吃嘛嘛香！妈妈再也不用担心我睡不着觉了！”</h2>
+
+                    <p><br>
+                    <hr class="uc-line">
+                    张三 - 30年忠实客户</p>
+                </div>
+            </slick>
+            <div class="nav uc-nav">
+                <ul>
+                    <li ng-repeat="item in userCaseList" ng-class="{active: slick.currentIndex==$index }">
+                        <img ng-src="{{item.src}}" ng-click="slick.slickGoTo('usercase', $index, false)">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

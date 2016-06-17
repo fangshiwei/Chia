@@ -1,0 +1,84 @@
+footer {
+  min-height: 289px;
+  padding-top: 56px;
+  color: white;
+  min-width: 1200px;
+
+  //background-color: rgba(234,52,22,.5); - debug
+  background-color: #313038;
+
+  .join-form {
+    padding-left: 17%;
+    padding-right: 5%;
+    margin-bottom: 36px;
+
+    .input-group-lg > .form-control, .input-group-lg > .input-group-addon {
+      height: 60px;
+    }
+
+    .btn-order {
+      font-size: 22px;
+      color: white;
+      background-color: $vvl-color-mask-brown-1;
+      border-color: $vvl-color-mask-brown-2;
+      width: 260px;
+      height: 60px;
+      border-radius: 30px;
+    }
+
+    .btn-order:hover {
+      color: white;
+      background-color: $vvl-color-mask-brown-1;
+      opacity: .9;
+      border-color: $vvl-color-mask-brown-2;
+    }
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .copyright {
+    padding-top: 22px;
+    padding-left: 45px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-left: 30px;
+    ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none
+    }
+    li {
+      cursor: pointer;
+      line-height: 22px;
+      float: left;
+      padding: 0 6px;
+      padding-right: 5%;
+      a, a:hover, a:focus, a:visited {
+        color: #FFFFFF;
+      }
+      h5 {
+        padding: 0 15px 5px 15px;
+      }
+      .active {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+}
