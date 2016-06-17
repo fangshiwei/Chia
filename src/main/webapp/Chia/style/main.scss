@@ -1,0 +1,55 @@
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "../bower_components/font-awesome/scss/font-awesome";
+@import "scss/variables";
+@import "scss/header";
+@import "scss/banner";
+@import "scss/history";
+@import "scss/user-case";
+@import "scss/nutrition";
+@import "scss/join";
+@import "scss/footer";
+
+body {
+  text-align: center;
+}
+
+a, a:focus, a:active, a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+
+.inline-block {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav {
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none
+  }
+  li {
+    float: left;
+  }
+}
+
+.chia-template {
+  //margin: 0px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-width: 1200px;
+  //background: url("images/Chia-template.jpg") top center no-repeat;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Carousel 3D</title>
+    <link href="../bower_components/angular-carousel-3d/dist/carousel-3d.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-swipe/dist/angular-swipe.min.js"></script>
+    <script src="../bower_components/angular-carousel-3d/dist/carousel-3d.min.js"></script>
+
+
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <!--<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>-->
+
+</head>
+<body ng-controller="mainCtrl">
+
+<carousel3d ng-model="slides" options="options">
+    <carousel3d-slide ng-repeat="slide in slides track by $index" ng-style="{'background': slide.bg}">
+        <div style="padding: 20px; color: #fff">
+            <h2>Slide</h2>
+            <p ng-bind="slide.caption"></p>
+            <p ng-bind="slide.caption"></p>
+        </div>
+    </carousel3d-slide>
+</carousel3d>
+
+<script>
+
+   var app =  angular.module('MyApp', ['angular-carousel-3d']);
+    app.controller('mainCtrl', function($scope) {
+        var base = '../bower_components/angular-carousel-3d/demo/';
+        $scope.slides = [
+            {'bg': '#2a6496', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.'},
+            {'bg': '#000000', caption: 'Lorem ipsum dolor sit amet '},
+            {'bg': '#ffcc41', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '},
+            {'bg': '#445fac', caption: 'Lorem ipsum dolor sit amet,  Enim, maxime.'},
+            {'bg': '#442BF3', caption: 'Lorem ipsum dolor sit amet,  Maxime.'}
+        ];
+
+        $scope.options = {
+            visible: 5,
+            perspective: 35,
+            startSlide: 0,
+            border: 2,
+            dir: 'ltr',
+            width: 500,
+            height: 270,
+            space: 320,
+            // controls: true
+        };
+    });
+
+</script>
+</body>
+</html>

@@ -16,7 +16,7 @@ import com.chia.web.controller.ChiapayRestController;
 public class ChiapayRestControllerTest extends BaseControllerTest{
 
 //	@Autowired  
-//    protected WebApplicationContext wac; 
+//  protected WebApplicationContext wac; 
 	
 	@Autowired
 	ChiapayRestController chiapayRestController;

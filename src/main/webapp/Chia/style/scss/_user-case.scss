@@ -1,0 +1,153 @@
+.vvl-user-case {
+  //background-color: rgba( 0, 0, 255, .6);
+  width: 100%;
+  // height: 1314px;
+  background: $vvl-bg;
+  
+  .title {
+    font-size: 30px;
+    padding-top: 90px;
+  }
+  .sub-title {
+    letter-spacing: 3px;
+  }
+  .carousel-3d-container {
+    //background: transparent;
+    //overflow-x: hidden;
+    //-ms-overflow-x: hidden;
+    //overflow-y: visible;
+    //-ms-overflow-y: visible;
+  }
+  .carousel-3d .slide-3d {
+    border-color: $vvl-color-theme;
+    //border-color: red;
+    box-shadow: 0px 3px 3px 3px #D8D8D8; // box-shadow: h-shadow v-shadow blur spread color inset;
+    background: #FFFFFF;
+  }
+
+  .user-group {
+
+    //background-color: rgba(255,0,0,.1);
+    padding-top: 10px;
+    height: 700px;
+
+    .group-card {
+      background-color: #FFFFFF;
+      //border: 1px solid $vvl-color-theme;
+      //background-color: rgba(255,0,0,.5);
+      .card-header:active {
+        color: #FFFFFF;
+      }
+      .card-header {
+        font-size: 26px;
+        line-height: 2;
+        //color: $vvl-color-theme;
+        color: #FFFFFF; // use the active color temporarily
+        //background-color: rgba(255,0,0,.5);// debug color
+        background-color: $vvl-color-theme;
+      }
+      .card-content {
+
+        padding: 0px 7%;
+
+        .border-top {
+          border-top: 1px solid $vvl-color-chart-line;
+        }
+        .card-text {
+          line-height: 2.5;
+          letter-spacing: 2px;
+        }
+        .card-avatar {
+          border-radius: 50%;
+          background-color: rgba(255, 0, 0, .5);
+          width: 180px;
+          height: 180px;
+          margin: 0 auto;
+          background: url("images/img6.png") top center no-repeat;
+          -moz-background-size: 100% 100%;
+          background-size: 100% 100%;
+        }
+
+        .card-button {
+          //line-height:2.5;
+          //letter-spacing: 1px;
+          width: 66%;
+          height: 60px;
+          border-radius: 30px;
+          margin: 25px auto;
+          padding: 14px;
+          font-size: 20px;
+          color: #FFFFFF;
+          background: $vvl-color-theme;
+          //background-color: rgba(255, 0, 0, .5);
+        }
+
+      }
+
+    }
+  }
+  /*****************************
+   * USER CASE
+   ****************************/
+  .user-case {
+    position: relative;
+    width: 100%;
+    height: 443px;
+    //background-color: rgba(0, 255, 0, .5);
+    background: url("images/user-case-bg.png") top center no-repeat;
+    color: #FFFFFF;
+
+    // mask
+    .mask {
+      width: 100%;
+      height: 443px;
+      background-color: rgba(156, 142, 104, .5);
+      //background-color: rgba(135, 122, 88, 0.5);
+      padding-top: 50px;
+      position: relative;
+
+      .uc-avatar {
+        border-radius: 50%;
+        //background-color: rgba(255, 0, 0, .5);
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        //background: url("images/img6.png") top center no-repeat;
+        //background-size: 100% 100%;
+        //-moz-background-size: 100% 100%;
+        border: 2px solid white;
+
+      }
+
+      .uc-line {
+        width: 40px;
+      }
+
+      .uc-nav {
+        width: 320px;
+        left: 50%;
+        margin-left: -160px;
+        bottom: 35px;
+        position: absolute;
+
+        li {
+          margin-right: 10px;
+        }
+
+        img {
+          cursor: pointer;
+          width: 45px;
+          height: 45px;
+        }
+        .active {
+          width: 56px;
+          img {
+            width: 56px;
+            height: 56px;
+          }
+        }
+      }
+
+    }
+  }
+}

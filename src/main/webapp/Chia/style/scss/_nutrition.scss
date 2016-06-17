@@ -1,0 +1,57 @@
+.vvl-nutrition {
+  width: 100%;
+
+  .nutrition-components {
+    padding-top: 40px;
+    height: 1056px;
+    //background-color: rgba(255, 0, 0, .5);
+
+    h4 {
+      margin-top: 30px;
+      margin-bottom: 22px;
+    }
+
+    .boxes {
+      width: 1108px;
+      margin: 0 auto;
+      .box {
+        float: left;
+
+        img {
+          width: 100%;
+        }
+      }
+      .text-block {
+        color: white;
+        text-align: left;
+        padding: 40px 50px 0 50px;
+        background: $vvl-color-mask-brown-2;
+        opacity: .5;
+        width: 570px;
+        height: 402px;
+
+        h4 {
+          margin-top: auto;
+          line-height: 1.5;
+        }
+        p {
+          font-size:16px;
+          margin-top: 25px;
+        }
+      }
+    }
+    div {
+      //border: 1px solid red;
+    }
+  }
+  .nutrition-charts {
+    height: 527px;
+    padding-top: 30px;
+    background-color: $vvl-bg;
+    //background-color: rgba(0, 255, 0, .5);
+    img {
+      width: 95%;
+    }
+  }
+
+}

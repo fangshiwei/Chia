@@ -1,0 +1,74 @@
+.vvl-chia {
+  .banner {
+    $white: #FFFFFF;
+    position: relative;
+    color: $white;
+    box-sizing: border-box;
+    width: 100%;
+    //min-width: 1200px;
+    height: 1000px;
+    background: url("images/image 2.png") top center no-repeat;
+
+    .mark {
+      background-color: rgba(156, 142, 104, .5);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      //z-index: 10;
+    }
+
+    h1 {
+      opacity: 1;
+      margin-top: 310px;
+      font-size: 80px;
+      font-weight: normal;
+    }
+
+    h3 {
+      margin-top: 26px;
+      font-weight: normal;
+    }
+
+    .btn-buy {
+      border-radius: 30px;
+      font-size: 26px;
+      border-width: 3px;
+
+      margin-top: 32px;
+      width: 240px;
+      color: $white;
+      background-color: transparent;
+      border-color: $white;
+    }
+
+    .btn-buy:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .brand-box {
+      color: #BBB5A9;
+      margin-top: 312px;
+      font-size: 18px;
+      width: 210px;
+      ul, li {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      li {
+        width: 70px;
+        float: left;
+      }
+
+      .border-right {
+        border-right: 1px solid #BBB5A9;
+      }
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Chia">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>维渥乐奇雅</title>
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="style/main2.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
+    <script src="bower_components/angular-swipe/dist/angular-swipe.min.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="bower_components/angular-slick/dist/slick.min.js"></script>
+    <script src="bower_components/angular-carousel-3d/dist/carousel-3d.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+
+
+    <link href="bower_components/angular-carousel-3d/dist/carousel-3d.min.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body style="text-align: center">
+<div ng-controller="AppController">
+    <div class="chia-template">
+        <ng-include src="'views/header.html'"></ng-include>
+
+        <ng-include class="section" id="vvl-top" src="'views/banner.html'"></ng-include>
+        <ng-include class="section" id="vvl-history" src="'views/history.html'"></ng-include>
+        <ng-include class="section" id="vvl-user-case" src="'views/user-case.html'"></ng-include>
+        <ng-include class="section" id="vvl-nutrition" src="'views/nutrition.html'"></ng-include>
+        <ng-include class="section" id="vvl-join" src="'views/join.html'"></ng-include>
+
+        <ng-include src="'views/footer.html'"></ng-include>
+    </div>
+</div>
+</body>
+</html>
