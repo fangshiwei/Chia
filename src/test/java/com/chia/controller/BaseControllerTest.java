@@ -13,5 +13,10 @@ import org.springframework.test.web.servlet.MockMvc;
 public class BaseControllerTest extends AbstractTransactionalJUnit4SpringContextTests{
 	
 	protected MockMvc mockMvc;
+	
+	@Test
+	public viod test(){
+		
+	}
 
 }
