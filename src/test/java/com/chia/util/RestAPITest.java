@@ -23,11 +23,6 @@ RestTemplate resTemplate;
 		resTemplate = new RestTemplate();
 	}
 	
-	@Test
-	public void test(){
-		fail("Not yet implemented");
-	}
-	
 	@Ignore
 	@Test
 	public void testRestJosnToObject(){
