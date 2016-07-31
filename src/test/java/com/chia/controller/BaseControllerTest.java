@@ -16,7 +16,7 @@ public class BaseControllerTest extends AbstractTransactionalJUnit4SpringContext
 	protected MockMvc mockMvc;
 	
 	@Test
-	public viod test(){
+	public void test(){
 		
 	}
 
